@@ -1,0 +1,16 @@
+DEVICE = "cuda"
+
+MODELS = ["resnet50","efficientnet_b3"]
+DATASETS = ["cifar10","cifar100"]
+DATA_SPLITS=[0.25,0.5,1.0]
+FREEZE_LEVELS=[0,0.25,0.5,0.75,1.0]
+
+NUM_EPOCHS = 15
+BATCH_SIZE = 64
+LEARNING_RATE = 1e-4
+WEIGHT_DECAY = 1e-4
+IMAGE_SIZE=96
+
+NUM_WORKERS = 2
+RESULTS_DIR = "results"
+
